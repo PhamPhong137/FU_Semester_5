@@ -1,0 +1,310 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.no-padding-margin{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgba(215, 214, 214, 0.556)
+}
+
+@media screen and (max-width: 1000px) {
+    .nav-search {
+      margin: 15px 0px;
+    }
+  }
+
+
+.header{
+    background-color: #6497b1;
+}
+.header ul{
+    list-style-type: none;
+}
+.header ul li a{
+    display: inline-block;
+}
+
+.navbar {
+    background-color: #005b96;
+    padding: 13px 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    position: fixed;
+    width: 100%;
+}
+.nav-search input{
+    margin: 0px;
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid white;
+}
+.nav-search button{
+    border: 2px solid white;
+    border: 2px 2px 2px 0px
+}
+
+.navbar-list-option-mid ul{
+    display: flex;
+    justify-content: center; 
+}
+
+.navbar-list-option-mid ul li i{
+    font-size: 26px;
+    padding: 0px 45px;
+    color: white;
+}
+.navbar-list-option-mid ul li i:hover{
+    color: #6497b1;
+    
+}
+
+.navbar-list-option-right li{
+
+    display: inline-block;
+}
+.navbar-list-option-right{
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+
+.navbar-list-option-right ul{
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: auto auto;
+    justify-content: right;
+    padding-right: 20px;
+}
+
+.navbar-list-option-right ul li i{
+    font-size: 20px;
+    color: #03396c;
+}
+
+.navbar-list-option-right ul li a{
+    
+    background-color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 39px;
+    text-align: center;
+}
+
+.navbar-list-option-left input{
+    width: 100%;
+}
+
+.navbar-list-option-left {
+    display: inline-block;
+}
+
+.navbar-list-option-left img{
+    width: 25%;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.body-content{
+    padding-top: 70px;
+    width: 100%;
+
+}
+.content-post{
+    display: flex;
+    justify-content: center;
+   
+}
+
+
+
+.body-content-left img{
+    width: 20%;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.body-content-left div a{
+    color: black;
+    text-decoration: none;
+}
+
+.body-content-left div a i{
+    font-size: 20px;
+    padding: 15px 20px;
+    color:  #03396c;
+    width: 25%;
+}
+
+.body-content-left div{
+    margin: 20px 0px;
+}
+
+.body-content-left div a:hover{
+    background-color: rgba(215, 214, 214, 0.698);
+}
+.body-content-left{
+    background-color: rgba(255, 255, 255, 0.385);
+    padding-top: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: fixed; 
+    height: 100%;
+}
+.body-content-left div a{
+    width: 100%;
+    display: block;
+}
+
+.body-content-left-avatar{
+    padding: 0px 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    .body-content-left {
+      display: none;
+    }
+  }
+
+.status-post-1{
+    display: inline-block;
+    width: 70%;
+    background-color: white;
+    padding: 20px 0px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 700px) {
+    .status-post-1{
+      width: 100%;
+
+    }
+  }
+@media screen and (max-width: 700px) {
+    .status-post{
+      width: 100%;
+
+    }
+  }
+.status-post-1 p{
+    padding: 10px 30px 0px 30px;
+    font-size: 130%;
+}
+
+.status-post-1 img{
+    width: 9%;
+    height: 9%;
+    border-radius: 50%;
+}
+
+.post-img img{
+    width: 100%;
+    border-radius: 0%;
+}
+
+.status-post-1-header{
+    margin-left: 30px;
+}
+
+.status-post-1-header img{
+   margin-left: 3.7%;
+   margin-right: 100%;
+}
+.status-post-1 img{
+    margin: 0px;
+    width: 100%;
+}
+.td-img{
+    width: 8.5%;
+    padding-right: 10px;
+}
+
+.like-btn {
+    font-size: 20px;
+    color: #000;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+    border: none ;
+  }
+
+  .liked  i{
+    color: red;
+  }
+
+  .like-comment-saved{
+    margin: 0px 5%;
+    padding: 0px 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .like-comment-saved button{
+    
+    padding-right: 10px;
+    background-color: white;
+    width: 25%;
+    padding: 7px 10px;
+  }
+
+  .number-of-like-and-comments{
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+  }
+
+  .like-comment-saved button i{
+    font-weight: 100;
+  }
+
+  .like-comment-saved button:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+.like-comment-saved span{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .body-content-right {
+      display: none;
+    }
+  }
+
+  .body-content-right{
+    position: fixed;
+    right: 0px;
+  }
+  .body-content-right > div{
+    margin: 50px 10px 0px 0px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+
+  }
+
+  .body-content-right a{
+    color: black;
+    text-decoration: none;
+  }
+  .body-content-right img{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+

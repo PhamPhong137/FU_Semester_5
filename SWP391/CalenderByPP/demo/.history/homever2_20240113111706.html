@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Sliding Header</title>
+  <style>
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  transition: top 0.3s;
+}
+
+h1 {
+  margin: 0;
+}
+
+.toggle-btn {
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+}
+
+.arrow-up,
+.arrow-down {
+  transition: opacity 0.3s;
+}
+
+.arrow-down {
+  opacity: 0;
+}
+
+.header-hidden .arrow-up {
+  opacity: 0;
+}
+
+.header-hidden .arrow-down {
+  opacity: 1;
+}
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="toggle-btn" onclick="toggleHeader()">
+      <span class="arrow-up">▲</span>
+      <span class="arrow-down">▼</span>
+    </div>
+    <h1>Your Website</h1>
+  </header>
+
+  <div class="content">
+    <!-- Your page content goes here -->
+  </div>
+
+  <script>let headerVisible = true;
+
+    function toggleHeader() {
+      const header = document.querySelector('header');
+      const toggleBtn = document.querySelector('.toggle-btn');
+    
+      headerVisible = !headerVisible;
+    
+      if (headerVisible) {
+        header.classList.remove('header-hidden');
+      } else {
+        header.classList.add('header-hidden');
+      }
+    }</script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Left Navigation Bar</title>
+  <style>
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+
+.navigation {
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  width: 250px;
+  height: 100vh;
+  overflow-x: hidden;
+  transition: width 0.3s;
+}
+
+.navigation nav {
+  display: none;
+}
+
+.navigation.active {
+  width: 0;
+}
+
+.navigation.active nav {
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.toggle-btn {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 15px;
+}
+  </style>
+</head>
+<body>
+
+  <div class="navigation">
+    <div class="toggle-btn" onclick="toggleNavigation()">☰</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="content">
+    <!-- Your page content goes here -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "Java",
+      "author": "Yo"
+    },
+    {
+      "id": "2",
+      "title": "React",
+      "author": "Yo1"
+    },
+    {
+      "id": "558b",
+      "title": "adw",
+      "author": "adw"
+    },
+    {
+      "id": "eab5",
+      "title": "adw",
+      "author": "adw"
+    },
+    {
+      "id": "74a5",
+      "title": "adw",
+      "author": "adw"
+    }
+    
+  ],
+  "users": [
+    {
+      "uid": "1",
+      "name": "PP",
+      "id": "1"
+    },
+    {
+      "uid": "2",
+      "name": "PP1",
+      "id": "2"
+    }
+  ]
+}

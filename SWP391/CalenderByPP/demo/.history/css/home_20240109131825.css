@@ -1,0 +1,14 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.header{
+    background-color: #6497b1;
+}
+.header ul{
+    list-style-type: none;
+}
+.header ul li{
+    display: inline-block;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Fullcalendar</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/amlich.js@1.0.0/dist/amlich.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="calendar"></div>
+    </div>
+    <br />
+  </body>
+</html>
+<script>
+  $(document).ready(function () {
+    $('#calendar').fullCalendar({
+      selectable: true,
+      selectHelper: true,
+      select: function () {},
+      eventClick: function (event) {
+        selectedDate = event.start.format('YYYY-MM-DD');
+        alert('Hello! You clicked on ' + selectedDate);
+      },
+      dayClick: function (date) {
+        // Lấy ra ngày khi click vào ngày (không phải sự kiện)
+        selectedDate = date.format('YYYY-MM-DD');
+        alert('Hello! You clicked on ' + selectedDate);
+      },
+      header: {
+        left: 'month, list',
+        center: 'title',
+        right: 'prev, today, next',
+      },
+      buttonText: {
+        today: 'Today',
+        month: 'Month',
+        list: 'List',
+      },
+      events: [
+        {
+          title: `Hello Phong12345+7
+                    888`,
+          start: '2024-01-13T09:00',
+          end: '2024-01-14',
+          color: 'green',
+        },
+      ],
+      eventRender: function (event, element) {
+        element.append('jell');
+        console.log(event);
+      },
+    });
+  });

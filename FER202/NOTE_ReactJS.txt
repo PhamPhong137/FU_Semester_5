@@ -1,0 +1,20 @@
+Khởi tạo Project ReactJS:          create-react-app  + tên file
+Cài React-Bootstrap                 npm install react-bootstrap bootstrap
+Import thư viện react-bootstrap     import 'bootstrap/dist/css/bootstrap.min.css';
+Cài Json-server:		   	npm install json-server@0.17.4 -g 
+Watch json-server                   json-server --watch db.json -p 3000 
+					json-server --watch database.json -p 9999
+Cài Axios:                          npm install --save axios
+Router            		    npm i react-router-dom
+Redux                               npm i redux@4.2.1
+					npm i react-redux@8.1.3
+					npm i redux-thunk@2.4.2 	
+rfec tab -> 
+
+
+npm list -g --depth=0
+npm uninstall json-server -g
+
+npm install json-server@0.17.4 -g (cài đúng phiên bản)(tránh phiên bản apha)
+
+Set-ExecutionPolicy RemoteSigned: cách fix npx 

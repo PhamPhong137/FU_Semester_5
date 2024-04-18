@@ -1,0 +1,74 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Laptop XYZ",
+      "categoryId": 1,
+      "price": 1200,
+      "description": "A high performance laptop suitable for gaming and professional work."
+    },
+    {
+      "id": "2",
+      "name": "Smartphone ABC",
+      "categoryId": 2,
+      "price": 700,
+      "description": "A sleek and powerful smartphone with the latest technology."
+    },
+    {
+      "id": "3",
+      "name": "Wireless Keyboard",
+      "categoryId": 3,
+      "price": 100,
+      "description": "A comfortable and durable wireless keyboard for everyday use."
+    },
+    {
+      "id": "4",
+      "name": "Bluetooth Mouse",
+      "categoryId": 3,
+      "price": 50,
+      "description": "A precise and ergonomic Bluetooth mouse for professionals."
+    },
+    {
+      "id": "5",
+      "name": "Wireless Headphones",
+      "categoryId": 3,
+      "price": 200,
+      "description": "A high-quality wireless headset with noise cancellation."
+    },
+    {
+      "id": "7",
+      "name": "t265",
+      "categoryId": "2",
+      "price": "555",
+      "description": "9"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Computers"
+    },
+    {
+      "id": "2",
+      "name": "Smartphones"
+    },
+    {
+      "id": "3",
+      "name": "Accessories"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "email": "hoan@fpt.edu.vn",
+      "password": "123456"
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "email": "jane@example.com",
+      "password": "hashed_password2"
+    }
+  ]
+}
